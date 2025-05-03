@@ -1,5 +1,7 @@
 pub mod init_game;
-pub mod process_income;
+pub mod generate_income;
+pub mod restart_game;
 
 pub use init_game::*;
-pub use process_income::*; 
+pub use generate_income::*;
+pub use restart_game::*; 

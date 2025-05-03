@@ -42,6 +42,19 @@ pub struct Resources {
     pub technologies_income: u32,
 }
 
+impl Default for Village {
+    fn default() -> Self {
+        Self {
+            town_hall: TownHall::default(),
+            gold_mines: vec![1, 0, 0, 0, 0],
+            barracks: vec![1, 0, 0, 0, 0],
+            laboratories: vec![0; 5],
+            warriors: vec![],
+            resources: Resources::default(),
+        }
+    }
+}
+
 impl Default for Resources {
     fn default() -> Self {
         Self { 
